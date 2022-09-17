@@ -1,0 +1,13 @@
+a#logo {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a#logo span {
+	font-weight: 600;
+    font-size: 18px;
+    color: white;
+	margin-left: 0.5rem;
+    margin-top: 3px;
+}

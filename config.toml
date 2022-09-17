@@ -1,0 +1,72 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Hello Documentation"
+theme = "hugo-theme-learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+# use icon https://github.com/matcornic/hugo-theme-learn/issues/363
+
+[params]
+  # editURL = "Hello"
+  description = "Documentation for Hello"
+  author = "Hello"
+  showVisitedLinks = false 
+  disableSearch = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLandingPageButton = true
+  disableMermaid = false
+  #customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  titleSeparator = "::"
+  themeVariant = "blue"
+  custom_css = ["css/theme-mine.css"]
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation for Hello"
+weight = 1
+languageName = "English"
+landingPageName = "<i class='fas fa-home'></i> Home"
+
+[Languages.zh-cn]
+title = "Hello"
+weight = 3
+languageName = "简体中文"
+landingPageName = "<i class='fas fa-home'></i> 首页"
+
+[Languages.zh-cn.params]
+disable_cookie = true
+
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-fw fa-github'></i> GitHub"
+# identifier = "ds"
+# url = "https://github.com/Hello/doc.Hello.com"
+# weight = 10
+
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-fw fa-discord'></i> Discord"
+# identifier = "dd"
+# url = "https://discord.com/invite/nDceKgxnkV"
+# weight = 20
+
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-fw fa-twitter'></i> Twitter"
+# identifier = "tt"
+# url = "https://twitter.com/Hello"
+# weight = 30
+
+# [[menu.shortcuts]]
+# name = "<i class='fab fa-fw fa-reddit'></i> Reddit"
+# identifier = "rd"
+# url = "https://www.reddit.com/r/Hello/"
+# weight = 40
